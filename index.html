@@ -44,7 +44,266 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/comm.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <h1 class="blind">Starbucks Korea</h1>
+        <div id="gnb">
+          <div class="gnb_left">
+            <a href="#">
+              <img src="./images/logo.png" alt="Starbucks Korea Logo" />
+            </a>
+            <a href="#">COFFEE</a>
+            <a href="#">MENU</a>
+            <a href="#">STORE</a>
+          </div>
+          <div class="gnb_right">
+            <a href="#">SIGN IN</a>
+            <a href="#">MY STARBUCKS</a>
+            <a href="#"><img src="./images/search.png" alt="" /></a>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <div class="main_contents">
+          <div class="main_contents_box">
+            <a href="#">
+              <img src="./images/main/main_bg.png" alt="" />
+            </a>
+          </div>
+          <div class="main_contents_img">
+            <img class="main_logo" src="./images/main/main_logo.png" alt="" />
+            <img
+              class="main_drink1"
+              src="./images/main/main_drink1.png"
+              alt=""
+            />
+            <img
+              class="main_drink2"
+              src="./images/main/main_drink2.png"
+              alt=""
+            />
+            <img
+              class="main_drink3"
+              src="./images/main/main_drink3.png"
+              alt=""
+            />
+          </div>
+          <div class="main_contents_slide">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/main/main_slide1.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/main_slide2.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/main/main_slide3.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="close-btn" id="closeBtn">
+            <i class="las la-arrow-right"></i>
+          </div>
+        </div>
+        <div class="event_contents">
+          <h2>EVENT</h2>
+          <swiper-container
+            class="mySwiper"
+            slides-per-view="4.5"
+            space-between="30"
+            free-mode="true"
+            autoplay="true"
+            autoplay-delay="1500"
+            loop="true"
+            loopAdditionalSlides="1"
+            initialSlide="0"
+          >
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide1.png" alt="" />
+                <strong>2024-02-01 ~ 2024-02-28</strong>
+                <p>
+                  MEET THE HEARTFUL MOMENTS
+                  <br />
+                  소중한 순간, 스타벅스와 함께하세요
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide2.png" alt="" />
+                <strong>2024-02-19 ~ 2024-02-25</strong>
+                <p>
+                  스타벅스 카드로 제조음료 구매 시
+                  <br />
+                  음료 하나 당 별 3개 추가 증정
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide3.png" alt="" />
+                <strong>2024-02-15 ~ 2024-02-29</strong>
+                <p>
+                  스타벅스에서 현대카드로 Apple pay
+                  <br />
+                  이용하고 8개 별 받기
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide4.png" alt="" />
+                <strong>2024-02-15 ~ 소진 시 까지</strong>
+                <p>
+                  반려동물과 특별한 일상을 보낼 수 있는
+                  <br />
+                  펫 프렌들리 스토어를 소개합니다
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide5.png" alt="" />
+                <strong>2024-02-13 ~ 2024-03-14</strong>
+                <p>
+                  스타벅스 커피 전문가에게 배우는
+                  <br />
+                  프리미엄 센서리 클래스
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide6.png" alt="" />
+                <strong>2024-02-13 ~ 2024-02-19</strong>
+                <p>
+                  15,000원 이상 구매 시
+                  <br />
+                  배달비 천원
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide7.png" alt="" />
+                <strong>2024-02-01 ~ 2024-02-29</strong>
+                <p>
+                  스타벅스 바리스타들의
+                  <br />
+                  최애 음료를 만나보세요
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide8.png" alt="" />
+                <strong>2024-02-01 ~ 2024-02-29</strong>
+                <p>
+                  스타벅스 하우스 토트백과
+                  <br />
+                  별 50개까지 받아가세요
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide9.png" alt="" />
+                <strong>2024.01.04 ~ </strong>
+                <p>
+                  내 차 인증하고
+                  <br />
+                  DT PASS 계속 사용하세요
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide10.png" alt="" />
+                <strong>2024-02-01 ~ 2024-12-31</strong>
+                <p>
+                  스타벅스 카드로 결제 시
+                  <br />
+                  만원 당 별 1개 추가 증정
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide11.png" alt="" />
+                <strong>2023-08-04 ~ 소진 시 까지</strong>
+                <p>
+                  저녁 7시 이후 대상 푸드를 제조음료와
+                  <br />
+                  함께 구매 시 최대 50% 혜택
+                </p>
+              </a>
+            </swiper-slide>
+            <swiper-slide>
+              <a href="#">
+                <img src="./images/event/event_slide12.png" alt="" />
+                <strong>2023-05-08 ~ 소진 시 까지</strong>
+                <p>
+                  온라인 스토어에서 케이크 구매 시
+                  <br />
+                  무료 음료 쿠폰을 드려요
+                </p>
+              </a>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+        <div class="rewards_contents">
+          <div class="rewards_contents_tit">
+            <h2>스타벅스 회원이세요?</h2>
+            <button class="yes_btn">예</button>
+            <button class="no_btn">아니요</button>
+          </div>
+          <div class="rewards_contents_yes">
+            <h2>로그인 하고 나만의 리워드를 확인해보세요</h2>
+            <button class="login_btn">로그인</button>
+            <button class="back_btn">뒤로</button>
+          </div>
+          <div class="rewards_contents_no">
+            <h2>스타벅스 회원가입 하고 다양한 리워드 혜택을 즐겨보세요</h2>
+            <button class="sign_btn">회원가입</button>
+            <button class="back_btn2">뒤로</button>
+          </div>
+        </div>
+        <div class="pick_contents">
+          <img class="pick_polaroid" src="./images/pick/polaroid.png" alt="" />
+          <img class="pick_tit" src="./images/pick/pick_tit.png" alt="" />
+          <div class="pick_txt">
+            <h2>
+              <strong>다양한 메뉴</strong>를<br />
+              <strong>스타벅스</strong>에서 즐겨보세요
+            </h2>
+            <p>
+              스타벅스만의 특별함을 경험할 수 있는
+              <strong>최상의 선택 음료</strong>
+            </p>
+            <p>
+              스타벅스 커피와 완벽한 어울림을 <strong>자랑하는 푸드</strong>
+            </p>
+            <p>다양한 시도와 디자인으로 <strong>가치를 더하는 상품</strong></p>
+            <p>
+              소중한 사람에게 마음을 전하는 가장 좋은 방법
+              <strong>스타벅스 카드</strong>
+            </p>
+            <button>자세히 보기</button>
+          </div>
+        </div>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
 </html>

@@ -1,3 +1,237 @@
-.contents {
-  height: 300px;
+#main {
+  width: 100%;
+}
+
+.main_contents {
+  position: relative;
+  top: -75px;
+  height: 900px;
+  &::before {
+    position: absolute;
+    content: url(../../images/main/main_frame.png);
+    z-index: 1;
+  }
+  .main_contents_box {
+    overflow: hidden;
+    width: 1500px;
+    margin: 0 auto;
+    border-radius: 174px;
+    position: absolute;
+    top: 90px;
+  }
+  .main_contents_img img {
+    position: absolute;
+    transition: transform 0.3s ease;
+    z-index: 3;
+    &:first-child {
+      top: 330px;
+      left: 130px;
+    }
+    &:nth-child(2) {
+      width: 280px;
+      top: 200px;
+      left: 520px;
+      &:hover {
+        scale: 1.05;
+      }
+    }
+    &:nth-child(3) {
+      width: 400px;
+      top: 520px;
+      left: 580px;
+      &:hover {
+        scale: 1.05;
+      }
+    }
+    &:last-child {
+      width: 280px;
+      top: 290px;
+      left: 830px;
+      &:hover {
+        scale: 1.05;
+      }
+    }
+  }
+  .main_contents_slide {
+    opacity: 0;
+    position: absolute;
+    top: 135px;
+    right: 70px;
+    overflow: hidden;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      transition: transform 0.5s ease;
+    }
+  }
+  .close-btn {
+    position: absolute;
+    top: 740px;
+    right: 350px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+  }
+}
+
+.event_contents {
+  height: 700px;
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    color: $primary;
+    margin-bottom: 50px;
+  }
+  .mySwiper {
+    display: flex;
+    gap: 20px;
+    swiper-slide {
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 260px;
+        }
+        strong {
+          text-align: center;
+          width: 260px;
+          padding-top: 20px;
+          font-size: 15px;
+          color: $primary;
+          border-bottom: 1px solid $primary;
+          padding: 20px 0 15px 0;
+        }
+        p {
+          padding: 15px 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.rewards_contents {
+  height: 400px;
+  background-color: #1e3932;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  .rewards_contents_tit {
+    color: $white;
+    text-align: center;
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      padding: 20px;
+    }
+    button {
+      color: $white;
+      font-family: "Pretendard";
+      width: 200px;
+      height: 60px;
+      border: 1px solid $white;
+      border-radius: 10px;
+      margin: 0 10px;
+    }
+  }
+  .rewards_contents_yes {
+    color: $white;
+    text-align: center;
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      padding: 20px;
+    }
+    button {
+      color: $white;
+      font-family: "Pretendard";
+      width: 200px;
+      height: 60px;
+      border: 1px solid $white;
+      border-radius: 10px;
+      margin: 0 10px;
+    }
+  }
+  .rewards_contents_no {
+    color: $white;
+    text-align: center;
+    h2 {
+      font-size: 40px;
+      font-weight: 700;
+      padding: 20px;
+    }
+    button {
+      color: $white;
+      font-family: "Pretendard";
+      width: 200px;
+      height: 60px;
+      border: 1px solid $white;
+      border-radius: 10px;
+      margin: 0 10px;
+    }
+  }
+}
+
+.pick_contents {
+  margin-top: 400px;
+  height: 800px;
+  background-image: url(../../images/pick/pick_bg.jpg);
+  background-size: 1920px auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100vw;
+  left: 0;
+  .pick_polaroid {
+    position: absolute;
+    right: 200px;
+    top: 70px;
+    width: 800px;
+  }
+  .pick_tit {
+    position: absolute;
+    top: 120px;
+    left: 580px;
+    width: 220px;
+  }
+  .pick_txt {
+    color: $white;
+    text-align: right;
+    position: absolute;
+    top: 320px;
+    left: 420px;
+    strong {
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: 300;
+      margin-bottom: 5px;
+    }
+    button {
+      color: $white;
+      font-family: "Pretendard";
+      border: 1px solid $white;
+      width: 130px;
+      height: 50px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+  }
 }
